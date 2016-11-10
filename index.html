@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RBG COLOR</title>
+<!-- 	<link rel="stylesheet" href="/css/semantic.css">
+-->	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h1>Color swaper</h1>
+
+	<div id="value"><span id="colorValue"></span><span id="valueHexadecimal">hexa here</span></div>
+	<br>
+	<br>
+	<div id="colorSwap">
+		<div><label for="red">r</label><input class="range" type="range" min="0" max="255" id="red" value=""><output id="RangeRed">0</output></div>
+		<br>
+		<div><label for="green">g</label><input class="range" type="range" min="0" max="255" id="green" value=""><output id="RangeGreen">0</output></div>
+		<br>
+		<div><label for="blue">b</label><input class="range" type="range" min="0" max="255" id="blue" value=""><output id="RangeBlue">0</output></div>
+
+	</div>
+
+
+
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
