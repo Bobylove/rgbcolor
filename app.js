@@ -4,6 +4,9 @@ $(document).ready(function(){
 
 	var me = {
 		colorBody:null,
+		red:null,
+		green:null,
+		blue:null,
 
 		init: function(){
 			me.range();
@@ -17,20 +20,20 @@ $(document).ready(function(){
 			});
 		},
 		changeBodyColor: function(){
-			var red = $('#red').val();
-			var green = $('#green').val();
-			var blue = $('#blue').val();
+			me.red = $('#red').val();
+			me.green = $('#green').val();
+			me.blue = $('#blue').val();
 			$('input').on('change', function(){
-				$('body').css('background-color',"rgb("+ red +","+green+","+blue+")");
+				$('body').css('background-color',"rgb("+ me.red +","+me.green+","+me.blue+")");
 				// console.log(red,green,blue);
-				me.init();
+				me.showColorNumber();
+				me.changeBodyColor();
 			});
-			
-		},
-		// },
-		// showColorNumber: function(){
 
-		// },
+		},
+		showColorNumber: function(){
+			$('#colorValue').html(" rgb ,"+me.red+","+me.green+","+me.blue+", to ,");
+		},
 		// showColorhexa: function(){
 
 		// },
