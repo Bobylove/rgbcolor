@@ -10,7 +10,7 @@
 
 	<h1>Color swaper</h1>
 
-	<div id="value"><span id="colorValue"></span><span id="valueHexadecimal">hexa here</span></div>
+	<div id="value"><label for="colorValue">RGB</label><input type="text" id="colorValue" value=""></input><span>to</span><label for="result">Hex</label><input type="text" id="result"></input></div>
 	<br>
 	<br>
 	<div id="colorSwap">
@@ -19,6 +19,8 @@
 		<div><label for="green">g</label><input class="range" type="range" min="0" max="255" id="green" value="0"><output id="RangeGreen">0</output></div>
 		<br>
 		<div><label for="blue">b</label><input class="range" type="range" min="0" max="255" id="blue" value="0"><output id="RangeBlue">0</output></div>
+		<div><label for="alpha">a</label><input class="range" type="range" min="0.0" max="1.0" step="0.1" id="alpha" value="0.5"><output id="RangeAlpha">0</output></div>
+
 
 	</div>
 
